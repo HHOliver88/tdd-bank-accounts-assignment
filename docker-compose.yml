@@ -1,30 +1,6 @@
 version: "3.2"
 services:
-    db:
-      image: mysql:5.7
-      volumes:
-        - db_data:/var/lib/mysql
-      restart: always
-      environment:
-        MYSQL_ROOT_PASSWORD: password
-        MYSQL_DATABASE: hh
-        MYSQL_USER: root
-        MYSQL_PASSWORD: password
-
-      ports:
-        - 3307:3306
-      
-    selenium_chrome:
-      image: selenium/standalone-chrome:4.0.0
-      volumes:
-        - /dev/shm:/dev/shm
-      ports:
-        - "4444:4444"
-
     app:
-      depends_on:
-        - db
-        - selenium_chrome
       build: ./
       command: npm start
       volumes:
