@@ -1,5 +1,8 @@
 # bank-accounts-assignment
 
+# VERY IMPORTANT
+After you download this app, make sure you run **npm install** FIRST in your local machine to install the dependencies before you run any docker commands.
+
 The BankAccount class should have a balance. When a new BankAccount instance is created, if an amount is given, the balance of the account should initially be set to that amount; otherwise, the balance should start at $0.
 
 The User class is associated with the BankAccount class. When a new User instance is created, a new instance of BankAccount should also be created. Store the BankAccount instance as account attribute in User class.
@@ -23,6 +26,5 @@ Run **npm test** command in a separate shell to see all your test output.
 # Instructions
 
 1. Treat these classes like Models in an MVC application. You will need to put these files in the /models folder and just require these classes in your test file.
-2. You will need to run the node server first before running any tests.
-3. Make sure you work on this assignment in a docker container. The necessarily files to build and run this app in a docker container is already provided.
-4. Once done, you need to zip your app in one file and upload the zipped file in Hacker Hero.
+2. Make sure you work on this assignment in a docker container. The necessarily files to build and run this app in a docker container is already provided.
+3. Once done, you need to zip your app in one file and upload the zipped file in Hacker Hero.
